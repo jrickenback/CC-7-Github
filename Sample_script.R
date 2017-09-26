@@ -4,8 +4,8 @@
 #                                                          #
 ############################################################
 
-# Add in your name
-# Add in purpose of this script
+# Jess
+# Practice tutorial
 
 # Libraries ----
 
@@ -36,4 +36,4 @@ theme.clean <- function(){
 # Save your plot in your project directory
 
 # Commit, pull, push!
-
+library(ggplot2)
