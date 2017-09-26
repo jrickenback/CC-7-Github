@@ -29,10 +29,17 @@ theme.clean <- function(){
           legend.position=c(0.9, 0.9))
 }
 
+git config --global user.email "jess_rickenback@yahoo.co.uk"
+git config --global user.name "jrickenback"
+
 # Load data ----
 
 # Make a plot showing how soil temperature changes with elevation ----
-
+(temp.el <- ggplot (temp_elevation, aes(x = Elevation.m, y = Soil.temp.mean)) +
+   geom_point(colour = "#8B4513") +
+   geom_smooth(method = lm, colour = "#8B4513", fill = "#8B4513", alpha = 0.6) +
+   labs(x = "Elevation (m)", y = "Mean soil temperature (°C)") +
+   theme.clean())
 # Save your plot in your project directory
 
 # Commit, pull, push!
